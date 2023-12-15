@@ -1,0 +1,6 @@
+<p>student-search works!</p>
+
+
+<div *ngFor="let student of students$ | async">
+{{ student.name }} <a [routerLink]="['../edit', student.id]"> Edit</a>
+</div>
